@@ -60,10 +60,14 @@ body {
 }
 
 .center {
-    display: flex;
+    display: none;
     flex-direction: column;
     justify-content: center;
     gap: 10px;
+}
+
+.center.active {
+    display: flex;
 }
 
 .choose-difficulty {
@@ -74,6 +78,10 @@ body {
     padding: 5px;
     text-align: center;
     background: none;
+}
+
+.choose-difficulty.active {
+    background: purple;
 }
 
 .right {
